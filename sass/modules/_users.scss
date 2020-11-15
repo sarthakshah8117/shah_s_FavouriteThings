@@ -1,0 +1,29 @@
+.user-section {
+    display: flex;
+    flex-wrap: wrap;
+
+        img {
+            width: 1000px;
+            height: auto;
+            margin-left: 15px;
+            border-radius: 5%;
+            border: 5px solid;
+        }
+}
+
+
+
+.user { 
+    // flex: 1;
+    @include addPadding(10px);
+
+    .user-name, .user-nickname, .user-role { margin: 0; }
+
+    img { max-width: 100%; }
+
+}
+
+@media screen and (min-width: 768px) {
+    .user { flex: 1; }
+    .user img { max-width: 150px; }
+}

@@ -1,0 +1,71 @@
+@media screen and (min-width: 480px) {
+  body {
+    background-color: purple;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: "arial", "helvetica", sans-serif;
+  font-size: 16px;
+  background-color: #9AA1F5;
+  margin: 0 0 50px 0;
+  border: 0;
+}
+
+.mainCon {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  padding: 20px;
+}
+
+.title {
+  justify-self: center;
+  align-items: center;
+  padding: 100px;
+}
+.title p {
+  font-family: "arial", "helvetica", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.user-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.user-section img {
+  width: 1000px;
+  height: auto;
+  margin-left: 15px;
+  border-radius: 5%;
+  border: 5px solid;
+}
+
+.user {
+  padding: 10px;
+}
+.user .user-name, .user .user-nickname, .user .user-role {
+  margin: 0;
+}
+.user img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .user {
+    flex: 1;
+  }
+
+  .user img {
+    max-width: 150px;
+  }
+}
+
+/*# sourceMappingURL=master.css.map */
