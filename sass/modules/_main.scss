@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font: $main-font;
+    font-size: $main-font-size;
+    background-color: $main-bg-color;
+    border: 0;
+}
+.mainCon {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    padding: 60px;
+}
+
+.title {
+    justify-self: center;
+    align-items: center;
+    padding: 50px;
+
+    h1 {
+            font-family: $main-font;
+            font-weight: bold;
+            font-size: $main-font-size;
+            text-align: center;
+    }
+        p {
+            font-family: $main-font;
+            font-weight: 3;
+            font-size: $p-font-size;
+            margin-top: 50px;
+            text-align: center;
+            text-decoration: none;
+            padding-bottom: 80px;
+            
+        }
+}
+

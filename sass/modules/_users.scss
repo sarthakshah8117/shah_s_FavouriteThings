@@ -1,0 +1,43 @@
+.user-section {
+    display: flex;
+    flex-wrap: wrap;
+
+        img {
+            width: 1000px;
+            height: auto;
+            margin-left: 15px;
+            border-radius: 2%;
+            
+        }
+}
+
+.user-section img{
+    transition: 0.5s ease-in-out;
+
+        &:hover {
+            border: 5px solid $hover-color;
+            transform: scale(1.1);
+            cursor: pointer;
+          
+        }
+}
+
+
+.user { 
+    // flex: 1;
+    @include addPadding(10px);
+
+    img { max-width: 100%; }
+
+}
+
+@media screen and (min-width: 800px) {
+    .user { flex: 1; }
+    .user img { 
+        max-width: 400px;
+        min-height: 300px;
+    .title p{
+        display: none;
+    }
+}
+}
