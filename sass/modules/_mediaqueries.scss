@@ -1,7 +1,6 @@
-// @media screen and (min-width: 480px) {
-//     // whatever styles you need here
-//     body { background-color:purple; }
-// }
+@media screen and (max-width: 480px) {
+    body { background-color:purple; }
+}
 
 @media only screen and (max-width: 900px)
 {

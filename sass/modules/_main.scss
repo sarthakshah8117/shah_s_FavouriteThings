@@ -4,16 +4,13 @@
     box-sizing: border-box;
 }
 
+
 body {
     font: $main-font;
     font-size: $main-font-size;
-
     background-color: $main-bg-color;
-
-    margin: 0 0 50px 0; 
     border: 0;
 }
-
 .mainCon {
     display: grid;
     height: 100vh;
@@ -30,13 +27,13 @@ body {
     h1 {
             font-family: $main-font;
             font-weight: bold;
-            font-size: 3rem;
+            font-size: $main-font-size;
             text-align: center;
     }
         p {
             font-family: $main-font;
             font-weight: 3;
-            font-size: 2rem;
+            font-size: $p-font-size;
             margin-top: 50px;
             text-align: center;
             text-decoration: none;

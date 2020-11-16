@@ -1,8 +1,6 @@
-// import your packages here
 import { fetchData } from "./modules/TheDataMiner.js";
 
 (() => {
-    // stub * just a place for non-component-specific stuff
     console.log('loaded');
     
     function popErrorBox(message) {
@@ -11,9 +9,9 @@ import { fetchData } from "./modules/TheDataMiner.js";
 
 
     function retrieveProjectInfo(event) {
-        // test for an ID
-        debugger;
-        // console.log(this.ID);
+        
+        // debugger;
+        
         if (!event.target.id) { return }
         fetchData(`./includes/index.php?ID=${event.target.id}`).then(data => console.log(data)).catch(err => console.log(err));
     }
@@ -28,7 +26,6 @@ import { fetchData } from "./modules/TheDataMiner.js";
 
             currentUserText[1].src = `images/${thumbs[user].Image}`;
             currentUserText[1].id = thumbs[user].ID;
-            // add this new user to the view
             currentUser.addEventListener("click", retrieveProjectInfo);
             userSection.appendChild(currentUser);
         }

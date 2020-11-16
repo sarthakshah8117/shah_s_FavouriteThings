@@ -31,10 +31,11 @@
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
     .user { flex: 1; }
-    .user img { max-width: 400px;
-    min-height: 300px;
+    .user img { 
+        max-width: 400px;
+        min-height: 300px;
     .title p{
         display: none;
     }
