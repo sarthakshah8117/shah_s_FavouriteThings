@@ -9,9 +9,6 @@ import { fetchData } from "./modules/TheDataMiner.js";
         alert("Something has gone horribly, horribly wrong");
     }
 
-    function handleDataSet(data) {
-        
-    }
 
     function retrieveProjectInfo(event) {
         // test for an ID
@@ -40,4 +37,8 @@ import { fetchData } from "./modules/TheDataMiner.js";
     }
         
     fetchData("./includes/index.php").then(data => renderPortfolioThumbnails(data)).catch(err => console.log(err));
+
+
+    
+    
 })();

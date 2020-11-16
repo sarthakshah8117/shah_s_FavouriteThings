@@ -1,4 +1,27 @@
-@media screen and (min-width: 480px) {
-    // whatever styles you need here
-    body { background-color:purple; }
+// @media screen and (min-width: 480px) {
+//     // whatever styles you need here
+//     body { background-color:purple; }
+// }
+
+@media only screen and (max-width: 900px)
+{
+    .mainCon
+    {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+
+        padding: 25px;
+    
+    }
+
+    .user-section{
+        justify-self: center;
+        align-self: center;
+    }
+
+    .user-section img{
+        margin-top: 20px;
+    }
 }
